@@ -1,5 +1,9 @@
+// Transforming Operators
+
 import UIKit
 import RxSwift
+
+print("map trying")
 
 var intObservable: Observable<Int> = Observable.from([1, 2, 3])
 var stringObservable = intObservable.map { "value is \($0)"} // map here returns another Observable
@@ -9,7 +13,6 @@ print()
 print("flatmap trying")
 
 var observableOfObservables: Observable<Observable<Int>> = Observable.just(intObservable)
-
 
 observableOfObservables.subscribe(onNext: { value in print(value)})
 
