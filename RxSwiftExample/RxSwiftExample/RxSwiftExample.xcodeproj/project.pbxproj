@@ -62,6 +62,7 @@
 		B10BF474254D7E5D000AD525 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B10BF48E254D7F81000AD525 /* Demo1.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Demo1.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		B10BF492254D850D000AD525 /* Demo2.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Demo2.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		B10BF4A6254DC5E4000AD525 /* Demo3.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Demo3.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		B5241F9C8411F02E01F0A1F3 /* Pods-RxSwiftExample-RxSwiftExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftExample-RxSwiftExampleUITests.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftExample-RxSwiftExampleUITests/Pods-RxSwiftExample-RxSwiftExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,6 +120,7 @@
 		B10BF444254D7E5B000AD525 = {
 			isa = PBXGroup;
 			children = (
+				B10BF4A6254DC5E4000AD525 /* Demo3.playground */,
 				B10BF492254D850D000AD525 /* Demo2.playground */,
 				B10BF48E254D7F81000AD525 /* Demo1.playground */,
 				B10BF44F254D7E5B000AD525 /* RxSwiftExample */,
