@@ -42,7 +42,7 @@ func resultWithSingle() -> Single<[Double]> {
     
     var success = false
     
-    return Single<[Double]>.create { single in
+    let single = Single<[Double]>.create { single in
         if success {
             single(.success([1, 2, 3]))
         }
@@ -52,12 +52,24 @@ func resultWithSingle() -> Single<[Double]> {
         
         return Disposables.create{}
     }
+    return single
 }
 
 resultWithSingle()
+    .catchErrorJustReturn([0])
     .subscribe { (value) in
         print(value)
     } onError: { (error) in
         print(error)
     }
 
+print()
+print("Single try again......")
+
+let single: Single<[Double]> = Single<[Double]>.just([])
+single
+    .subscribe { (value) in
+        print(value)
+    } onError: { (error) in
+        print(error)
+    }
